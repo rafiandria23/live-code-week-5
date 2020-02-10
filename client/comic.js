@@ -1,6 +1,6 @@
 class Comic {
   static findAllComics() {
-    $("#comicCollectionContainer").empty();
+    $("#comicCollection").empty();
     $.ajax({
       type: "GET",
       url: `${baseURL}/comics`,

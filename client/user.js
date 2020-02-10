@@ -12,7 +12,7 @@ class User {
         localStorage.setItem("access_token", result.access_token);
         $("#loginContainer").hide(1000);
         $("#registerContainer").hide();
-        $("#comicCollection").show(1000);
+        $("#comicCollectionContainer").show(1000);
         $("#btn-logout").show(1000);
         Comic.findAllComics();
       })
@@ -35,6 +35,7 @@ class User {
         $("#loginContainer").hide();
         $("#registerContainer").hide(1000);
         $("#btn-logout").show(1000);
+        $("#comicCollectionContainer").show(1000);
         Comic.findAllComics();
       })
       .fail(err => {
